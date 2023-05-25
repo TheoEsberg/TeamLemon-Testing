@@ -18,3 +18,10 @@ Here is a list of things that I think can go wrong that I will test.
 
 ### Point of Error : 2 
 For the second MSUnit test I will test "MakeExternalTransfer" inside of "AccountManagement.cs" to ensure that all transfers to other accounts will go smooth and not fail.
+
+Here is a list of things that I need to test.
+- [ ] Check that you have at least 1 account to transfer money from
+- [ ] Make sure that the account transfering to is valid and existing
+- [ ] Ensure that we have enough money to transfer
+- [ ] Make sure that we can use other values than integers
+- [ ] Validate that the amount to transfer is correct between different currencies.
