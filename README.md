@@ -8,3 +8,6 @@ I will look at the code that we have written and try to find some functions that
 
 ### Point of Error : 1
 I will do a MSUnit test for the function "InternalTransfer" inside of "AccountManagement.cs" to ensure that all transfers within the same user will go smooth and not fail.
+
+### Point of Error : 2 
+For the second MSUnit test I will test "MakeExternalTransfer" inside of "AccountManagement.cs" to ensure that all transfers to other accounts will go smooth and not fail.
