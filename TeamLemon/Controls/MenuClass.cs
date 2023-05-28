@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using TeamLemon.Models;
 
 namespace TeamLemon.Controls
@@ -44,7 +45,7 @@ namespace TeamLemon.Controls
             bool loop = true;
             while (loop)
             {
-                Console.Clear();
+                ClearConsoleScreen();
 
                 Console.WriteLine($"Welcome {currentUser.Name}");
 
@@ -95,6 +96,20 @@ namespace TeamLemon.Controls
                 }
 
             }
+        }
+
+        private static void ClearConsoleScreen()
+        {
+            if (!IsRunningInTestEnvironment())
+            {
+                Console.Clear();
+            }
+        }
+
+        private static bool IsRunningInTestEnvironment()
+        {
+            return AppDomain.CurrentDomain.GetAssemblies()
+                .Any(a => a.FullName.StartsWith("Microsoft.VisualStudio.TestPlatform"));
         }
 
         public static int GotoMenu(string type)

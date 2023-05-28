@@ -5,4 +5,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="TeamLemon-MSUnitTest\**" />
+    <EmbeddedResource Remove="TeamLemon-MSUnitTest\**" />
+    <None Remove="TeamLemon-MSUnitTest\**" />
+  </ItemGroup>
+
 </Project>

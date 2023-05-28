@@ -1,0 +1,14 @@
+C:\Users\Theo\Source\Repos\TeamLemon-Testing\TeamLemon\bin\Debug\netcoreapp3.1\TeamLemon.exe
+C:\Users\Theo\Source\Repos\TeamLemon-Testing\TeamLemon\bin\Debug\netcoreapp3.1\TeamLemon.deps.json
+C:\Users\Theo\Source\Repos\TeamLemon-Testing\TeamLemon\bin\Debug\netcoreapp3.1\TeamLemon.runtimeconfig.json
+C:\Users\Theo\Source\Repos\TeamLemon-Testing\TeamLemon\bin\Debug\netcoreapp3.1\TeamLemon.runtimeconfig.dev.json
+C:\Users\Theo\Source\Repos\TeamLemon-Testing\TeamLemon\bin\Debug\netcoreapp3.1\TeamLemon.dll
+C:\Users\Theo\Source\Repos\TeamLemon-Testing\TeamLemon\bin\Debug\netcoreapp3.1\TeamLemon.pdb
+C:\Users\Theo\Source\Repos\TeamLemon-Testing\TeamLemon\obj\Debug\netcoreapp3.1\TeamLemon.csproj.AssemblyReference.cache
+C:\Users\Theo\Source\Repos\TeamLemon-Testing\TeamLemon\obj\Debug\netcoreapp3.1\TeamLemon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Theo\Source\Repos\TeamLemon-Testing\TeamLemon\obj\Debug\netcoreapp3.1\TeamLemon.AssemblyInfoInputs.cache
+C:\Users\Theo\Source\Repos\TeamLemon-Testing\TeamLemon\obj\Debug\netcoreapp3.1\TeamLemon.AssemblyInfo.cs
+C:\Users\Theo\Source\Repos\TeamLemon-Testing\TeamLemon\obj\Debug\netcoreapp3.1\TeamLemon.csproj.CoreCompileInputs.cache
+C:\Users\Theo\Source\Repos\TeamLemon-Testing\TeamLemon\obj\Debug\netcoreapp3.1\TeamLemon.dll
+C:\Users\Theo\Source\Repos\TeamLemon-Testing\TeamLemon\obj\Debug\netcoreapp3.1\TeamLemon.pdb
+C:\Users\Theo\Source\Repos\TeamLemon-Testing\TeamLemon\obj\Debug\netcoreapp3.1\TeamLemon.genruntimeconfig.cache

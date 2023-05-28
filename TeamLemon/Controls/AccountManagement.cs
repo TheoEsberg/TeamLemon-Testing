@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Reflection;
 using TeamLemon.Models;
 
 namespace TeamLemon.Controls
@@ -238,12 +239,10 @@ namespace TeamLemon.Controls
 
         public static void InternalTransfer(User currentUser)
         {
-            Console.Clear();
+            ClearConsoleScreen();
             Console.WriteLine("Internal Transfer");
-            MonitorAccounts(currentUser);
-
             int fromAccount = 0;
-            int toAccount = 0;
+            int toAccount = 10;
             decimal amountToTransfer = 0;
             bool IsTransfer = true;
 
@@ -314,14 +313,14 @@ namespace TeamLemon.Controls
                 go.UserMenu(currentUser);
             }
             int fromAccount = 0;
-            int toAccount = 10;
+            int toAccount = 0;
             decimal amountToTransfer = 0;
             var foundAccount = new Account();
 
             var isTransfering = true;
             while (isTransfering)
             {
-                Console.Clear();
+                ClearConsoleScreen();
                 MonitorAccounts(currentUser);
                 Console.WriteLine("External transfer");
                 Console.WriteLine("From what account do you wish to transfer from?");
@@ -477,7 +476,7 @@ namespace TeamLemon.Controls
         /// <param name="amount"></param>
         /// <param name="fromAccount"></param>
         /// <param name="inputAccNumber"></param>
-        private static void MakeExternalTransfer(User currentUser, int toAccountKey, decimal amount
+        public static void MakeExternalTransfer(User currentUser, int toAccountKey, decimal amount
             , int fromAccount, string inputAccNumber)
         {
 
@@ -495,9 +494,24 @@ namespace TeamLemon.Controls
                 amount = amount / Admin.usdValue;
             }
 
-
             Account.AllAccounts[toAccountKey].Where(x => x.AccountID == inputAccNumber).ToList()
                 .ForEach(y => y.Balance += amount);
         }
+
+        private static void ClearConsoleScreen()
+        {
+            if (!IsRunningInTestEnvironment())
+            {
+                Console.Clear();
+            }
+        }
+
+        private static bool IsRunningInTestEnvironment()
+        {
+            return AppDomain.CurrentDomain.GetAssemblies()
+                .Any(a => a.FullName.StartsWith("Microsoft.VisualStudio.TestPlatform"));
+        }
     }
 }
+
+
